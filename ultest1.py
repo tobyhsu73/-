@@ -3,7 +3,7 @@ import time
 
 
 
-ser2 = serial.Serial('COM10',9600)
+ser2 = serial.Serial('COM15',9600)
 
 
 while True:
@@ -22,5 +22,8 @@ while True:
     
     y=(t2[0])*256+(t3[0])
     print(y)
-    time.sleep(0.5)
+    with open("ex1-6.txt","a") as f:
+        txt=str(y)
+        f.write(txt+'\n')
+        time.sleep(0.5)
     
