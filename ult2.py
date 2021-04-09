@@ -18,8 +18,8 @@ def read():
 
     z=(t2[0])*256+(t3[0])
     time.sleep(0.5)
-    with open("real.txt","a") as f:
+    with open("ex1.txt","a") as f:
         txt=str(z)
         f.write(txt+'\n')
-    return z
+    
 
